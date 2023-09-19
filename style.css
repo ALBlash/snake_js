@@ -1,0 +1,80 @@
+body {
+    background: rgb(212, 211, 211);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    gap: 30px;
+}
+
+.grid {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(150, 87, 246);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+
+}
+
+.snake {
+    background: rgb(255, 9, 87);
+    border-radius: 8px;
+}
+
+.apple {
+    background: rgb(212, 255, 0);
+    border-radius: 20px;
+}
+
+
+.playAgain {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(150, 87, 246);
+    font-family: sans-serif;
+}
+
+.playAgain:hover {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2.5px solid rgb(150, 87, 246);
+    color: rgb(150, 87, 246);
+    background-color: white;
+    font-family: sans-serif;
+    box-shadow: 2px 3px 5px 2px #888888;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+    border: 1.5px solid blue;
+    box-shadow: 2px 3px 5px 2px #888888;
+    /* font-weight: bold; */
+}
