@@ -46,15 +46,16 @@ function createBoard() {
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
     randomApple(squares);
-    //random apple
     direction = 1;
     scoreDisplay.innerHTML = score;
+    // Assign the computed intervalTime from setInter to intervalTime
     intervalTime = 1000;
     currentSnake = [2, 1, 0];
     currentIndex = 0;
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
     interval = setInterval(moveOutcome, intervalTime);
 }
+
 
 
 function moveOutcome() {
@@ -78,6 +79,7 @@ function moveSnake(squares) {
     //  Here, the code calculates the new position for the snake's head based on its current direction
     currentSnake.unshift(currentSnake[0] + direction);
     console.log(currentSnake);
+    console.log(direction);
     // movement ends here
     eatApple(squares, tail);
     squares[currentSnake[0]].classList.add("snake");
@@ -125,6 +127,7 @@ function eatApple(squares, tail) {
 
 
 function randomApple(squares) {
+    let appleIndex;
     do {
         // the appleIndex is going to contain a random number from 0 - 1 * squares.length
         // and what ever number comes out thats the specific div

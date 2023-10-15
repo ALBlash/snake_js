@@ -32,6 +32,8 @@ body {
     border-radius: 8px;
 }
 
+#snake-svg {}
+
 .apple {
     background: rgb(212, 255, 0);
     border-radius: 20px;
